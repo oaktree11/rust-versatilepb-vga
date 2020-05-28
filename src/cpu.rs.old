@@ -1,0 +1,10 @@
+// SPDX-License-Identifier: MIT OR Apache-2.0
+//
+// Copyright (c) 2020 Andre Richter <andre.o.richter@gmail.com>
+
+//! Processor code.
+
+#[cfg(target_arch = "armv7a")]
+#[path = "_arch/armv7a/cpu.rs"]
+mod arch_cpu;
+pub use armv7a::*;
